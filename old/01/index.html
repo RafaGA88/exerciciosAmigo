@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="mt-5 w-75 mx-auto">
+        <form class="row g-3" id="pesquisa">
+            <p class="col-auto">Pesquisar</p>
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Buscar...</label>
+                <input type="text" class="form-control" id="inputPesquisa" placeholder="Buscar...">
+            </div>
+            <select class="form-select col-auto w-auto" aria-label="Default select example" id="convenio">
+                <option id="nulo" selected>Convênio</option>
+                <option id="amil" value="amil">Amil</option>
+                <option id="bradesco" value="bradesco">Bradesco</option>
+                <option id="hapvida" value="hapvida">Hapvida</option>
+                <option id="cassi" value="cassi">CASSI</option>
+                <option id="sulamerica" value="sulamerica">Sulamérica</option>
+            </select>
+        </form>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th scope="=col">Data</th>
+                    <th scope="=col">Número</th>
+                    <th scope="=col">Paciente</th>
+                    <th scope="=col">Convênio</th>
+                    <th scope="=col">Preço</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider" id="tbody">
+    
+            </tbody>
+        </table>
+
+    </div>
+    <script src="./assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
